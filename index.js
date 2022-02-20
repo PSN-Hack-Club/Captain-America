@@ -16,7 +16,12 @@ client.on('messageCreate', async message=> {
         return await message.delete();
     }
     if (filter.isProfane(message.content)){
-        await message.reply("https://tenor.com/view/captain-america-marvel-avengers-gif-14328153");
+        try{
+            return await message.reply("https://tenor.com/view/captain-america-marvel-avengers-gif-14328153");
+        }
+        catch (e){
+            return;
+        }
     }
 })
 
