@@ -5,7 +5,7 @@ const Filter = require("bad-words")
 
 const client = new Client({intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES]})
 const filter = new Filter()
-filter.addWords("zamn", "durb", "geetanjali", "talking to himself", "windows", "pathways", "reddit", "facebook", "meta", "digital design", "personal project", "ib", "myp", "psn", "wizemen", "spanish", "oof", "dp", "mit app inventor", "exams", "exam")
+filter.addWords("zamn", "durb", "geetanjali", "talking to himself", "windows", "pathways", "reddit", "facebook", "meta", "digital design", "personal project", "ib", "myp", "psn", "wizemen", "spanish", "oof", "dp", "mit app inventor", "exams", "exam", "voldemort")
 
 client.on('ready', ()=> {
     console.log(`Logged in as ${client.user.tag}!`);
