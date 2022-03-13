@@ -9,6 +9,12 @@ filter.addWords("zamn", "durb", "geetanjali", "talking to himself", "windows", "
 
 client.on('ready', ()=> {
     console.log(`Logged in as ${client.user.tag}!`);
+
+    setInterval(async ()=>{
+        const spamChannel = client.channels.cache.get(process.env.SPAMCHAN);
+        spamChannel.send(`<@${process.env.DURBID}> didnt ask`);
+
+    }, 1000*60*20)
 });
 
 client.on('messageCreate', async message=> {
